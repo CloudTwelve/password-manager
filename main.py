@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-from pycryptodome import Crypto
+import Crypto
 import getpass
 
 # THIS! IS! SUPER! INSECURE!
