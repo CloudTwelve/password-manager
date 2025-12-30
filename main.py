@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import json
-import os
 from pycryptodome import Crypto
 import getpass
 
@@ -32,7 +31,7 @@ def startup():
             print("You'll need to create a password.")
             password = getpass.getpass("Password: ")
             with open("data/master_hash.txt", "x") as f:
-                f.write(password)
+                f.write(generate_hash(password, "hack_club_{{847c0c5265687ca799f8}}"))
             continue
 
 def change_app_pass():
